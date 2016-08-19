@@ -1,0 +1,11 @@
+{
+  "version": "1.0.3",
+  "packages": ["."],
+  "plugins": [
+    "./lib"
+  ],
+  "eslint": {
+    "directories": ["lib/"],
+    "formatter": "table"
+  }
+}

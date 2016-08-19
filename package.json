@@ -1,0 +1,59 @@
+{
+  "name": "northbrook-eslint",
+  "version": "0.0.0",
+  "description": "Northbrook Plugin for ESlint",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "nb eslint",
+    "test": "npm run lint",
+    "commit": "nb commit",
+    "release": "nb release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/northbrookjs/eslint.git"
+  },
+  "keywords": [
+    "northbrook",
+    "plugin",
+    "eslint",
+    "standard"
+  ],
+  "author": "Tylor Steinberger <tlsteinberger167@gmailcom> (https://github.com/TylorS)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/northbrookjs/eslint/issues"
+  },
+  "homepage": "https://github.com/northbrookjs/eslint#readme",
+  "config": {
+    "ghooks": {
+      "commit-msg": "node ./node_modules/.bin/validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert",
+        "release"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "northbrook": "^1.0.3"
+  },
+  "devDependencies": {
+    "northbrook": "^1.0.3"
+  },
+  "dependencies": {
+    "eslint": "^3.3.1",
+    "eslint-config-standard": "^6.0.0-beta.3",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0"
+  }
+}
