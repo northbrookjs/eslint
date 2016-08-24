@@ -48,7 +48,7 @@
     "northbrook": "^1.0.3"
   },
   "devDependencies": {
-    "northbrook": "^1.0.3"
+    "northbrook": "^2.0.11"
   },
   "dependencies": {
     "eslint": "^3.3.1",
