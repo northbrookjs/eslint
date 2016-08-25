@@ -5,14 +5,14 @@
 # Installation
 
 ```sh
-npm install --save-dev northbrook-eslint
+npm install --save-dev @northbrook/eslint
 ```
 
 **northbrook.json**
 ```js
 {
   "plugins": [
-    "northbrook-eslint"
+    "eslint"
   ]
 }
 ```
