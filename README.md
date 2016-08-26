@@ -33,7 +33,7 @@ Inside of your `northbrook.json`
 {
   "eslint": {
     // default : ['src/']
-    "patterns": ["lib/**/*.js"], // paths to lint - supports globs
+    "directories": ["lib/**/*.js"], // paths to lint - supports globs
     // default: 'stylish'
     "formatter": "table" // allows you to specify
   }
