@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "ghooks": "^1.3.2",
-    "northbrook": "^2.2.2",
+    "northbrook": "^3.0.0",
     "validate-commit-msg": "^2.7.0"
   },
   "dependencies": {
