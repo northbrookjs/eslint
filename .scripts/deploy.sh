@@ -12,5 +12,5 @@ if [[ $TRAVIS_BRANCH == "master" ]]; then
   bash .scripts/npm-login.sh;
 
   # run deployment
-  northbrook release;
+  northbrook release --skip-login;
 fi
