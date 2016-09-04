@@ -1,3 +1,12 @@
+# v1.2.0 (2016-09-04)
+---
+
+
+## Features
+
+- feat(eslint): update to latest nb and include postinstall script [ee6ed4af](https://github.com/northbrookjs/eslint/commits/ee6ed4af6e6328995f3198fd0a55fcc9fb4e74e4)
+
+
 # v1.1.1 (2016-08-25)
 ---
 
