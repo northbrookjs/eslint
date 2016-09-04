@@ -1,3 +1,12 @@
+# v1.2.1 (2016-09-04)
+---
+
+
+## Bug Fixes
+
+- fix(eslint): update northbrook to version 3.1.0 (#14) [a4983e78](https://github.com/northbrookjs/eslint/commits/a4983e78ca6c277d9692fe6a99d789de393cec5a)
+
+
 # v1.2.0 (2016-09-04)
 ---
 
