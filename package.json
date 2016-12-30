@@ -4,12 +4,9 @@
   "description": "Northbrook Plugin for ESlint",
   "main": "lib/index.js",
   "scripts": {
-    "lint": "nb eslint",
-    "test": "npm run lint",
+    "test": "nb mocha",
     "commit": "nb commit",
-    "prerelease": "echo '\nLogin as `northbrook`\n' && sleep 2 && npm login",
-    "release": "nb release",
-    "postinstall": "node post-install.js"
+    "release": "nb release"
   },
   "repository": {
     "type": "git",
@@ -27,26 +24,15 @@
     "url": "https://github.com/northbrookjs/eslint/issues"
   },
   "homepage": "https://github.com/northbrookjs/eslint#readme",
-  "config": {
-    "ghooks": {
-      "commit-msg": "node ./node_modules/.bin/validate-commit-msg"
-    },
-    "validate-commit-msg": {
-      "types": "*"
-    }
-  },
-  "peerDependencies": {
-    "northbrook": "^3.0.6"
+  "dependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "findup-sync": "^0.4.3",
+    "northbrook": "^4.1.5"
   },
   "devDependencies": {
-    "ghooks": "^1.3.2",
-    "northbrook": "^3.1.0",
-    "validate-commit-msg": "^2.7.0"
-  },
-  "dependencies": {
-    "eslint": "^3.3.1",
-    "eslint-config-standard": "^6.0.0-beta.3",
-    "eslint-plugin-promise": "^2.0.1",
-    "eslint-plugin-standard": "^2.0.0"
+    "@northbrook/mocha": "^2.1.1"
   }
 }
