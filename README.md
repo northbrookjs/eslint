@@ -12,10 +12,8 @@ npm install --save-dev @northbrook/eslint
 ```js
 const eslint = require('@northbrook/eslint').plugin
 
-{
-  "plugins": [
-    eslint
-  ]
+module.exports = {
+  plugins: [ eslint ]
 }
 ```
 
