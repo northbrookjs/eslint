@@ -1,3 +1,10 @@
+# 2.0.0 (2016-12-30)
+---
+
+## Features
+
+- feat(eslint): update for northbrook v4 [743b31ef](https://github.com/northbrookjs/eslint/commits/743b31ef4f06631d57db49d6865eb4ba896a1196)
+
 # v1.2.1 (2016-09-04)
 ---
 
