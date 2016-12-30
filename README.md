@@ -8,11 +8,13 @@
 npm install --save-dev @northbrook/eslint
 ```
 
-**northbrook.json**
+**northbrook.js**
 ```js
+const eslint = require('@northbrook/eslint').plugin
+
 {
   "plugins": [
-    "eslint"
+    eslint
   ]
 }
 ```
@@ -27,11 +29,12 @@ to using `eslint-config-standard`.
 
 ### Options
 
-Inside of your `northbrook.json`
+Inside of your `northbrook.js`
 
 ```js
 {
-  "eslint": {
+  // all 100% optional
+  eslint: {
     // default : ['src/']
     "directories": ["lib/**/*.js"], // paths to lint - supports globs
     // default: 'stylish'
