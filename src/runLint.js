@@ -1,13 +1,11 @@
-const { EOL } = require('os')
-const { join } = require('path')
-const { CLIEngine } = require('eslint')
-const findup = require('findup-sync')
+import { EOL } from 'os'
+import { join } from 'path'
+import { CLIEngine } from 'eslint'
+import findup from 'findup-sync'
 
 const ESLINT_CONFIGS = ['.eslintrc', '.eslintrc.json']
 
-exports.runLint = runLint
-
-function runLint ({ pkg, config }, io) {
+export function runLint ({ pkg, config }, io) {
   const { name, path } = pkg
 
   const eslint = config.eslint || {}
@@ -17,9 +15,9 @@ function runLint ({ pkg, config }, io) {
   const patterns = globs.map(glob => join(path, glob))
 
   const eslintConfig =
-    findup(ESLINT_CONFIGS, { cwd: path }) || join(__dirname, 'eslintrc.json')
+    findup(ESLINT_CONFIGS, { cwd: path }) || join(__dirname, '../.eslintrc')
 
-  io.stdout.write(`Running ESlint for ${name}...`)
+  io.stdout.write(`Running ESlint for ${name}...` + EOL + EOL)
 
   const { report, formatter } = lint(eslintConfig, patterns, eslint.formatter)
 
@@ -31,7 +29,7 @@ function runLint ({ pkg, config }, io) {
     return Promise.reject(report)
   }
 
-  io.stdout.write('complete!' + EOL)
+  io.stdout.write(`Completed ESlint for ${name}` + EOL + EOL)
 
   return Promise.resolve(report)
 }

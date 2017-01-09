@@ -4,7 +4,8 @@
   "description": "Northbrook Plugin for ESlint",
   "main": "lib/index.js",
   "scripts": {
-    "test": "nb mocha",
+    "preversion": "nb buba",
+    "test": "nb eslint && nb mocha",
     "commit": "nb commit",
     "release": "nb release"
   },
@@ -25,14 +26,15 @@
   },
   "homepage": "https://github.com/northbrookjs/eslint#readme",
   "dependencies": {
-    "eslint": "^3.12.2",
+    "eslint": "^3.13.0",
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "findup-sync": "^0.4.3",
-    "northbrook": "^4.1.5"
+    "northbrook": "^4.3.5"
   },
   "devDependencies": {
+    "@northbrook/buba": "^1.0.0",
     "@northbrook/mocha": "^2.1.1"
   }
 }

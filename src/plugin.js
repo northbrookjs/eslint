@@ -1,10 +1,7 @@
-const { command, alias, description, each } = require('northbrook')
+import { command, alias, description, each } from 'northbrook'
+import { runLint } from './runLint'
 
-const { runLint } = require('./runLint')
-
-const plugin =
+export const plugin =
   command(alias('eslint'), description('Lint your code with ESlint'))
-
-exports.plugin = plugin
 
 each(plugin, runLint).catch(() => process.exit(1))
