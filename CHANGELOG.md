@@ -1,3 +1,10 @@
+# 2.0.1 (2017-01-09)
+---
+
+## Bug Fixes
+
+- fix(eslint): add a build system [8cc732a6](https://github.com/northbrookjs/eslint/commits/8cc732a65bd15961b02051392042742765d01b02)
+
 # 2.0.0 (2016-12-30)
 ---
 
