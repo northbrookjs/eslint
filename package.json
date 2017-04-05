@@ -27,7 +27,7 @@
   "homepage": "https://github.com/northbrookjs/eslint#readme",
   "dependencies": {
     "eslint": "^3.13.0",
-    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard": "^8.0.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "findup-sync": "^0.4.3",
